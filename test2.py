@@ -1,4 +1,7 @@
 from langchain_core.messages import HumanMessage, SystemMessage
+from langchain_ollama import OllamaEmbeddings
+
+embedding_model = OllamaEmbeddings(model="nomic-embed-text:v1.5")
 
 # Create a HumanMessage object
 message = SystemMessage(content="LangChain is amazing!")
